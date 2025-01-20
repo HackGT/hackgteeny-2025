@@ -5,22 +5,19 @@ const TrackCard = ({_imgSrc, title, content}) => {
 	return (
 		<Flex width="100%" flexDir={{base: 'column', lg: 'row'}} gap={10}>		
 
-			{/* NOTE: because of that flexDir above,
-				- width only applies for base (mobile) 
-				- height only matters for lg (desktop) 
-				this is intended!!!! */}
-			<Image maxW="min(100%, 200px)" m="auto" src={_imgSrc} alt="" />
+			{/* NOTE: 168 happens to be the max width that causes the headers to not wrap... */}
+			<Image maxW="min(100%, 168px)" m="auto" src={_imgSrc} alt="" />
 
 			<Box h="fit-content">
 				<Text 
-				fontSize={{base: "3xl", lg: "2xl"}}
-				fontWeight={600} 
+				fontSize={{base: "20px", lg: "30px"}}
+				fontWeight={500} 
 				mb={4} 
 				textAlign={{base: 'center', lg: 'left'}}>
 					{title}
 				</Text>
 
-				<Text fontSize={{base: "md", lg: "sm"}} textAlign={{base: 'center', lg: 'left'}}>
+				<Text fontSize={{base: "16px", lg: "15px"}} textAlign={{base: 'center', lg: 'left'}}>
 					{content}
 				</Text>
 			</Box>

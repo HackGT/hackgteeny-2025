@@ -12,7 +12,7 @@ const HeroSection = () => {
 			<Box 
 			bgColor={styleConstants.colorPrimary} 
 			borderRadius={styleConstants.borderRadius} 
-			padding="min(5vh, 3rem) min(10vw, 4rem)"
+			padding="min(5vmax, 3rem) min(8vmax, 4rem)"
 			display={{
 				base: 'block',
 				lg: 'flex',
@@ -20,16 +20,16 @@ const HeroSection = () => {
 
 				<Flex flexDirection="column" gap={4}>
 					<Text
-					padding="1rem min(4vw, 2rem)"
+					padding="min(2vw, 1rem) min(4vw, 2rem)"
 					bgColor="white" 
 					width="fit-content" 
-					fontSize='3xl' 
+					fontSize={{base: '20px', lg: '35px'}}
 					fontWeight='bold' 
-					borderRadius={styleConstants.borderRadius}>
+					borderRadius={{base: 1000, lg: styleConstants.borderRadius}}>
 						Register
 					</Text>
 
-					<Text color="white">
+					<Text color="white" fontSize={{base: '15px', lg: '20px'}}>
 						HackGTeeny is a series of six hour-and-a-half workshops for any Georgia Tech student who wants to learn fundamental concepts in CS, especially skills that apply at a hackathon. Workshops will happen daily at locations throughout Georgia Tech's campus from Monday, September 27th to Saturday, October 2nd. Each day is a new topic, ranging from data science to how to participate in a hackathon!
 					</Text>
 				</Flex>
