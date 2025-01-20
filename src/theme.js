@@ -10,7 +10,6 @@ const theme = extendTheme({
     body: "DM Sans Variable, sans-serif",
     heading: "DM Sans Variable, sans-serif",
   },
-
 });
 
 export default theme;
