@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import GenericSection from '../GenericSection';
-import { Box, Flex } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import TrackCard from './TrackCard';
 
 import iphoneIcon from "../../assets/tracks/iphone.svg";
