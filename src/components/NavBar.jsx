@@ -1,10 +1,10 @@
-import { Flex, Box, useDisclosure, IconButton, HStack, Stack, Button, Collapse, Link, Img, Text } from '@chakra-ui/react';
-import hackgteeny from '../img/hackgteeny.png';
+import { Flex, Box, useDisclosure, IconButton, Stack, Collapse, Link, Img, Text, Grid, Center } from '@chakra-ui/react';
+import hackgteeny from '../assets/hackgteeny.png';
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
-const NavLink = ({ children, href }) => {
+const NavLink = ({ children, href, textAlign }) => {
   return (
-    <Text fontSize="27px">
+    <Text textAlign={textAlign ?? "center"} fontSize="27px">
       <Link href={href} _hover={{
         color: "#7B69EC"
       }}>
@@ -16,21 +16,25 @@ const NavLink = ({ children, href }) => {
 
 const DesktopNavBar = () => {
   return (
-    <Flex alignItems='center' gap={4} width='100%' justifyContent='space-between'>
+    <Grid templateColumns="1fr 1fr 1fr 1fr 1fr" alignItems='center' gap={4} width='100%' justifyContent='space-between'>
       <NavLink href="#admissions">
         Admissions
       </NavLink>
       <NavLink href="#tracks">
         Tracks
       </NavLink>
-      <Img src={hackgteeny} alt='HackGT' h="153px" />
+
+      <Center>
+        <Img src={hackgteeny} alt='HackGT' h="153px" />
+      </Center>
+
       <NavLink href="#schedule">
         Schedule
       </NavLink>
       <NavLink href="#faq">
         FAQ
       </NavLink>
-    </Flex>
+    </Grid>
   );
 };
 
