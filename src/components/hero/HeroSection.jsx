@@ -12,7 +12,7 @@ const HeroSection = () => {
 			<Box 
 			bgColor={styleConstants.colorPrimary} 
 			borderRadius={styleConstants.borderRadius} 
-			padding="3rem 4rem"
+			padding="min(5vh, 3rem) min(10vw, 4rem)"
 			display={{
 				base: 'block',
 				lg: 'flex',
@@ -20,8 +20,7 @@ const HeroSection = () => {
 
 				<Flex flexDirection="column" gap={4}>
 					<Text
-					mx={{base: 'auto', lg: 0}}
-					padding="1rem 2rem"
+					padding="1rem min(4vw, 2rem)"
 					bgColor="white" 
 					width="fit-content" 
 					fontSize='3xl' 
@@ -35,7 +34,7 @@ const HeroSection = () => {
 					</Text>
 				</Flex>
 
-				<Image mx="auto" src={heroImg} alt="" />
+				<Image ml="auto" src={heroImg} alt="" />
 
 			</Box>
 

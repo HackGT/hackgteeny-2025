@@ -2,14 +2,14 @@ import { Box, Image, Text } from '@chakra-ui/react';
 import React from 'react'
 import styleConstants from '../../styleConstants';
 
-const AdmissionsCard = ({imgSrc, title, content}) => {
+const AdmissionsCard = ({_imgSrc, title, content}) => {
 	return (
 		<Box
 			display={{ base: 'flex', lg: 'grid' }} 
 			gap={{base: 10, lg: 0}}
 			gridTemplateColumns='1fr 1fr'
 			flexDir={'column'}> {/* switch to horiz. on small scrns */}
-				<Image mx="auto" src={imgSrc} h="80%" alt="" />
+				<Image mx="auto" src={_imgSrc} maxH={350} alt="" />
 				<Box 
 				display={{ base: 'flex', lg: 'block' }}
 				flexDir='column'
@@ -20,7 +20,7 @@ const AdmissionsCard = ({imgSrc, title, content}) => {
 					color="white"
 					fontSize="xl"
 					fontWeight={400}
-					p="0.6rem 4rem"
+					p="0.6rem min(10vw, 4rem)"
 					w="fit-content"
 					h="fit-content"
 					mb={8}>
