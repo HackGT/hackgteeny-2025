@@ -9,7 +9,7 @@ const GenericSection = ({id, title, children}) => {
 			
 			{title && // no text/purple bar if no title (specifically for the top section)
 				<>
-					<Text fontSize="55px" fontWeight="bold" textAlign="center">
+					<Text fontSize={{base: "25px", lg: "55px"}} fontWeight="bold" textAlign="center">
 						{title}
 					</Text>
 
