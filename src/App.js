@@ -5,17 +5,18 @@ import GenericSection from './components/GenericSection';
 import HeroSection from './components/hero/HeroSection';
 import AdmissionsSection from './components/admissions/AdmissionsSection';
 import TracksSection from './components/tracks/TracksSection';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <>
       <Container maxW='container.lg' p={4}>
         <NavBar />
-        <PurpleDivider mb={16} />       
+        <PurpleDivider mb={16} mt={5} />
 
         { /* the only reason this isnt in the flex is cuz we need less space on the bottom */}
         <Box mb={16}>
-          <HeroSection /> 
+          <HeroSection />
         </Box>
 
         <Flex direction='column' rowGap={32}>
@@ -31,7 +32,7 @@ function App() {
             <h3>FAQ stuff!!!</h3>
           </GenericSection>
 
-          <Text textAlign="center" fontSize="3xl">Footer</Text>
+          <Footer />
 
         </Flex>
 
