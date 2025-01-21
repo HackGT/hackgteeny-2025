@@ -51,16 +51,17 @@ const MobileNavBar = () => {
       >
         {/* Hamburger Menu */}
         <IconButton
-          size='lg'
+          fontSize='25px'
           icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
           aria-label="Toggle Menu"
           variant="ghost"
           color="black"
           onClick={onToggle}
+          _hover={{}}
         />
 
         {/* Logo */}
-        <Flex direction="column" align="center" flexGrow={1}>
+        <Flex direction="column" align="center" flexGrow={1} ml="-25px">
           <Img src={hackgteeny} alt="HackGT" h="100px" />
         </Flex>
       </Flex>
@@ -94,11 +95,11 @@ const NavBar = () => {
   return (
     // conditional render using chakra ui
     <>
-      <Box display={{ base: 'none', md: 'block' }}>
+      <Box display={{ base: 'none', lg: 'block' }}>
         <DesktopNavBar />
       </Box>
 
-      <Box display={{ base: 'block', md: 'none' }}>
+      <Box display={{ base: 'block', lg: 'none' }}>
         <MobileNavBar />
       </Box>
     </>
