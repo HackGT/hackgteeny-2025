@@ -5,6 +5,8 @@ import GenericSection from './components/GenericSection';
 import HeroSection from './components/hero/HeroSection';
 import AdmissionsSection from './components/admissions/AdmissionsSection';
 import TracksSection from './components/tracks/TracksSection';
+import ScheduleSection from './components/schedule/ScheduleSection';
+
 
 function App() {
   return (
@@ -22,10 +24,7 @@ function App() {
 
           <AdmissionsSection />
           <TracksSection />
-
-          <GenericSection id='admissions' title='Schedule'>
-            <h3>Schedule stuff!!!</h3>
-          </GenericSection>
+          <ScheduleSection />
 
           <GenericSection id='faqs' title='FAQs'>
             <h3>FAQ stuff!!!</h3>
