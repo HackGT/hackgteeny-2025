@@ -3,7 +3,7 @@ import GenericSection from '../GenericSection';
 import { Flex } from '@chakra-ui/react';
 
 import cubes1 from "../../assets/cubes1.svg";
-import mentor1 from "../../assets/mentor1.svg";
+// import mentor1 from "../../assets/mentor1.svg";
 import AdmissionsCard from './AdmissionsCard';
 
 const AdmissionsSection = () => {
@@ -14,9 +14,10 @@ const AdmissionsSection = () => {
 				<AdmissionsCard
 				_imgSrc={cubes1}
 				title={"Participants"}>
-					Admissions for the event will be first come first serve per workshop (more information below), and for GT students only. However, all materials and workshop recordings will be available for free online after the event. Only those registered for the event will be allowed to attend workshops.
+					All Georgia Tech students are welcome to apply to participate in HackGTeeny! Applications will be open from <b>February 1 to February 26, 2025</b>. Only students who are admitted to the event will be eligible to attend the workshops. <b>Participants will also receive priority acceptance to HackGT 12.</b> Each workshop will be hosted by a different CoC club, and there will be a mini-competition at the end of each session, with unique prizes for each workshop winner!
 				</AdmissionsCard>
 
+				{/* [admissions section removed as of 2025 hi-fi, 21 jan 2025]
 				<AdmissionsCard
 				_imgSrc={mentor1}
 				title={"Mentors"}>
@@ -24,6 +25,7 @@ const AdmissionsSection = () => {
 					<br /><br />
 					<b>This mentor registration is separate from the HackGT 8 mentor registration</b>. If you already signed up for HackGT 8 as a mentor, you do not need to fill out the free response questions. If you are accepted as a HackGTeeny mentor you will automatically be a HackGT 8 mentor if you indicate in the registration.
 				</AdmissionsCard>
+				*/}
 
 			</Flex>
 		</GenericSection>
