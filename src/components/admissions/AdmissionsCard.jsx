@@ -9,17 +9,20 @@ const AdmissionsCard = ({_imgSrc, title, children}) => {
 			gap={{base: 10, lg: 10}}
 			gridTemplateColumns='1fr 1fr'
 			flexDir={'column'}> {/* switch to horiz. on small scrns */}
+			
 				<Image mx="auto" src={_imgSrc} alt="" />
+
 				<Box 
 				display={{ base: 'flex', lg: 'block' }}
 				flexDir='column'
 				alignItems='center'>
+
 					<Text 
 					bgColor={styleConstants.colorPrimary}
 					borderRadius={styleConstants.borderRadius}
 					color="white"
 					fontSize={{base: "20px", lg: "27px"}}
-					fontWeight={400}
+					fontWeight={600}
 					p="0.6rem min(10vw, 4rem)"
 					w={{base: "fit-content", lg: "300px"}}
 					textAlign="center"
@@ -27,9 +30,11 @@ const AdmissionsCard = ({_imgSrc, title, children}) => {
 					mb={8}>
 						{title}
 					</Text>
-					<Box fontSize={{base: "16px", lg: "20px"}} textAlign={{base: 'center', lg: 'left'}}>
+
+					<Box fontSize={{base: "16px", lg: "22px"}} textAlign={{base: 'center', lg: 'left'}}>
 						{children}
 					</Box>
+
 				</Box>
 			</Box>
 	);

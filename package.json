@@ -8,6 +8,8 @@
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@fontsource-variable/dm-sans": "^5.1.1",
+    "@fontsource-variable/outfit": "^5.1.1",
+    "@fontsource-variable/syne": "^5.1.1",
     "cra-template": "1.2.0",
     "framer-motion": "^11.18.1",
     "react": "^19.0.0",

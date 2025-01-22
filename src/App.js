@@ -1,18 +1,18 @@
 import { Box, Container, Flex } from '@chakra-ui/react';
 import NavBar from './components/NavBar';
 import PurpleDivider from './components/PurpleDivider';
-import GenericSection from './components/GenericSection';
 import HeroSection from './components/hero/HeroSection';
 import AdmissionsSection from './components/admissions/AdmissionsSection';
-import TracksSection from './components/tracks/TracksSection';
+// import TracksSection from './components/tracks/TracksSection';
 import ScheduleSection from './components/schedule/ScheduleSection';
 import Footer from './components/Footer';
 import FAQSection from './components/faq/FAQSection';
+import WorkshopsSection from './components/workshops/WorkshopsSection';
 
 function App() {
   return (
     <>
-      <Container maxW='container.lg' p={4}>
+      <Container maxW='container.xl' py={4} px={10}>
         <NavBar />
         <PurpleDivider mb={16} mt={5} />
 
@@ -24,7 +24,8 @@ function App() {
         <Flex direction='column' rowGap={32}>
 
           <AdmissionsSection />
-          <TracksSection />
+          {/* <TracksSection /> */}
+          <WorkshopsSection />
           <ScheduleSection />
           <FAQSection />
 
