@@ -1,5 +1,5 @@
 import { Box, HStack, Text, Icon, Link } from "@chakra-ui/react";
-import { FaInstagram, FaFacebook, FaTwitter, FaGithub, Faweb } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaTwitter, FaGithub } from "react-icons/fa";
 import { IoIosGlobe } from "react-icons/io";
 
 const LINKS = [
@@ -39,7 +39,7 @@ const Footer = () => {
           })
         }
       </HStack>
-      <Text align='center' fontWeight={600}>Made with ♡ by HexLabs</Text>
+      <Text align='center' fontWeight={600} mt={2}>Made with ♡ by HexLabs</Text>
     </Box>
   );
 };

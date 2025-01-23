@@ -1,29 +1,36 @@
-import React from 'react'
+import React from 'react';
 import GenericSection from '../GenericSection';
 import { Flex } from '@chakra-ui/react';
 import FAQCard from './FAQCard';
+
+const FAQS = [
+	{
+		question: "How do I participate?",
+		answer: "Template answer"
+	},
+	{
+		question: "Who is eligible to participate?",
+		answer: "Any student at Georgia Tech, regardless of major or year, can participate in HackGTeeny. Admissions is first come first serve per workshop, so register soon!"
+	}
+];
 
 const FAQSection = () => {
 	return (
 		<GenericSection id="faq" title="FAQ">
 			<Flex flexDir="column" gap={13}>
-				<FAQCard
-				title = {"How do I participate?"} 
-				text = {"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
-				>	
-				</FAQCard>
-
-				<FAQCard
-				title = {"Who is eligible to participate?"} 
-				text = {"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
-				>	
-				</FAQCard>
-
-				<FAQCard
-				title = {"Add a FAQ here"} 
-				text = {"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
-				>	
-				</FAQCard>
+				{
+					FAQS.map((faq, index) => {
+						return (
+							<FAQCard
+								key={index}
+								title={faq.question}
+								text={faq.answer}
+							>
+							</FAQCard>
+						);
+					}
+					)
+				}
 			</Flex>
 		</GenericSection>
 	);

@@ -10,23 +10,24 @@ const HeroSection = () => {
     <GenericSection id='home'>
 
       <Box
-      bgImage={`linear-gradient(to bottom, #${styleConstants.gradientPrimary[0]}, #${styleConstants.gradientPrimary[1]})`}
-      borderRadius={styleConstants.borderRadius}
-      padding="min(5vmax, 3rem) min(8vmax, 4rem)"
-      display={{
-        base: 'block',
-        lg: 'flex',
-      }}>
+        bgImage={`linear-gradient(to bottom, #${styleConstants.gradientPrimary[0]}, #${styleConstants.gradientPrimary[1]})`}
+        borderRadius={styleConstants.borderRadius}
+        padding="min(5vmax, 3rem) min(8vmax, 4rem)"
+        display={{
+          base: 'block',
+          lg: 'flex',
+        }}>
 
         <Flex flexDirection="column" gap={4}>
           <Text
-          fontFamily={styleConstants.fonts.heading}
-          padding="min(2vw, 1rem) min(4vw, 2rem)"
-          bgColor="white"
-          width="fit-content"
-          fontSize={{ base: '20px', lg: '35px' }}
-          fontWeight='bold'
-          borderRadius={{ base: 1000, lg: styleConstants.borderRadius }}>
+            fontFamily={styleConstants.fonts.heading}
+            padding="min(2vw, 1rem) min(4vw, 2rem)"
+            bgColor="white"
+            width="fit-content"
+            fontSize={{ base: '20px', lg: '35px' }}
+            fontWeight='bold'
+            borderRadius={{ base: 1000, lg: styleConstants.borderRadius }}
+          >
             Register
           </Text>
 

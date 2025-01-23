@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import GenericSection from '../GenericSection';
-import { Flex } from '@chakra-ui/react';
+import { chakra, Flex } from '@chakra-ui/react';
 
 import cubes1 from "../../assets/cubes1.svg";
 // import mentor1 from "../../assets/mentor1.svg";
@@ -12,9 +12,9 @@ const AdmissionsSection = () => {
 			<Flex flexDir="column" gap={16}>
 
 				<AdmissionsCard
-				_imgSrc={cubes1}
-				title={"Participants"}>
-					All Georgia Tech students are welcome to apply to participate in HackGTeeny! Applications will be open from <b>February 1 to February 26, 2025</b>. Only students who are admitted to the event will be eligible to attend the workshops. <b>Participants will also receive priority acceptance to HackGT 12.</b> Each workshop will be hosted by a different CoC club, and there will be a mini-competition at the end of each session, with unique prizes for each workshop winner!
+					_imgSrc={cubes1}
+					title={"Participants"}>
+					All Georgia Tech students are welcome to apply to participate in HackGTeeny! Applications will be open from <chakra.span fontWeight='bold' textDecoration='underline'>February 1 to February 26, 2025</chakra.span>. Only students who are admitted to the event will be eligible to attend the workshops. <b>Participants will also receive priority acceptance to HackGT 12.</b> Each workshop will be hosted by a different CoC club, and there will be a mini-competition at the end of each session, with unique prizes for each workshop winner!
 				</AdmissionsCard>
 
 				{/* [admissions section removed as of 2025 hi-fi, 21 jan 2025]
