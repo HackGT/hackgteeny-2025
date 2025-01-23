@@ -20,8 +20,8 @@ const DesktopNavBar = () => {
       <NavLink href="#admissions">
         Admissions
       </NavLink>
-      <NavLink href="#tracks">
-        Tracks
+      <NavLink href="#workshops">
+        Workshops
       </NavLink>
 
       <Center>
@@ -77,8 +77,8 @@ const MobileNavBar = () => {
           <NavLink href="#admissions">
             Admissions
           </NavLink>
-          <NavLink href="#tracks">
-            Tracks
+          <NavLink href="#workshops">
+            Workshops
           </NavLink>
           <NavLink href="#schedule">
             Schedule
