@@ -5,10 +5,6 @@ import FAQCard from './FAQCard';
 
 const FAQS = [
 	{
-		question: "How do I participate?",
-		answer: "Template answer"
-	},
-	{
 		question: "Who is eligible to participate?",
 		answer: "Any student at Georgia Tech, regardless of major or year, can participate in HackGTeeny. Admissions is first come first serve per workshop, so register soon!"
 	}

@@ -26,7 +26,7 @@ function App() {
           <AdmissionsSection />
           {/* <TracksSection /> */}
           <WorkshopsSection />
-          <ScheduleSection />
+          {/* <ScheduleSection /> */}
           <FAQSection />
 
           <Footer />
