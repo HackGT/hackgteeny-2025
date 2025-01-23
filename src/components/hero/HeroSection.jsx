@@ -32,7 +32,7 @@ const HeroSection = () => {
           </Text>
 
           <Text color="white" fontWeight={400} fontSize={{ base: '15px', lg: '22px' }}>
-            HackGTeeny is a series of one-hour workshops designed for Georgia Tech students eager to learn key computer science concepts, with a special focus on skills useful for hackathons. The workshops will take place throughout the day in Klaus classrooms on March 1st. Each session will cover a unique topic, hosted by various CS clubs from Tech, and will span a wide range of subjects—from web and app development to site design and more.
+            HackGTeeny is a series of one-hour workshops designed for Atlanta-area students eager to learn key computer science concepts, with a special focus on skills useful for hackathons. The workshops will take place throughout the day in Klaus classrooms on <b>March 1st, 2025</b>. Each session will cover a unique topic, hosted by various CS clubs from Georgia Tech, and will span a wide range of subjects—from web and app development to site design and more.
           </Text>
         </Flex>
 

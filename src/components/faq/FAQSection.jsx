@@ -6,7 +6,7 @@ import FAQCard from './FAQCard';
 const FAQS = [
 	{
 		question: "Who is eligible to participate?",
-		answer: "Any student at Georgia Tech, regardless of major or year, can participate in HackGTeeny. Admissions is first come first serve per workshop, so register soon!"
+		answer: "Any student in the Atlanta-area who can attend the event in person (at the Klaus Advanced Computing Building) eligible to participate. No prior computer science experience is required!"
 	}
 ];
 
