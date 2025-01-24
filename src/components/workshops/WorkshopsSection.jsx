@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import GenericSection from '../GenericSection';
 import { Grid } from '@chakra-ui/react';
 
@@ -13,17 +13,17 @@ import startupExchange_icon from '../../assets/workshops/startupExchange_icon.pn
 const WorkshopsSection = () => {
 	return (
 		<GenericSection id="workshops" title="Workshops">
-			<Grid 
-			gap={12}
-			templateRows={{base: "repeat(5, 1fr)", lg: "1fr"}}
-			templateColumns={{base: "1fr", lg: "repeat(5, 1fr)"}}>
+			<Grid
+				gap={12}
+				templateRows={{ base: "repeat(5, 1fr)", lg: "1fr" }}
+				templateColumns={{ base: "1fr", lg: "repeat(5, 1fr)" }}>
 
 				<WorkshopCard title="GT Design" icon={gtDesign_icon}>
 					Led by GT Design, this workshop will cover the fundamentals of Figma and website design. Participants will learn how to create mockup designs and gain hands-on experience in bringing their ideas to life through design tools.
 				</WorkshopCard>
 
 				<WorkshopCard title="iOS" icon={ios_icon}>
-				This workshop, hosted by iOS Club, will teach participants how to plan and design iOS apps using Swift and Xcode. You'll gain hands-on experience building a basic iOS app from the ground up!
+					This workshop, hosted by iOS Club, will teach participants how to plan and design iOS apps using Swift and Xcode. You'll gain hands-on experience building a basic iOS app from the ground up!
 				</WorkshopCard>
 
 				<WorkshopCard title="GitMad" icon={gitMad_icon}>
@@ -31,11 +31,11 @@ const WorkshopsSection = () => {
 				</WorkshopCard>
 
 				<WorkshopCard title="AI @ GT" icon={aiAtGt_icon}>
-				AI@GT’s workshop will be an introduction to the world of artificial intelligence. Learn how to work with tools like Python, TensorFlow, and machine learning algorithms to build AI models and understand their real-world applications.
+					AI@GT’s workshop will be an introduction to the world of artificial intelligence. Learn how to work with tools like Python, TensorFlow, and machine learning algorithms to build AI models and understand their real-world applications.
 				</WorkshopCard>
 
 				<WorkshopCard title="Startup Exchange" icon={startupExchange_icon}>
-				Learn about how to start your entrepreneurial journey by utilizing resources all around you with Georgia Tech's Startup Exchange organization.
+					Hear from a speaker at working in Big Tech as they discuss the creating a startup, from idea to growth. Learn practical insights on turning ideas into impactful products and navigating the challenges of entrepreneurship.
 				</WorkshopCard>
 
 			</Grid>

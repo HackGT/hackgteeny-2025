@@ -14,7 +14,11 @@ const AdmissionsSection = () => {
 				<AdmissionsCard
 					_imgSrc={cubes1}
 					title={"Participants"}>
-					All Georgia Tech students are welcome to apply to participate in HackGTeeny! Applications will be open from <chakra.span fontWeight='bold' textDecoration='underline'>February 1 to February 26, 2025</chakra.span>. Only students who are admitted to the event will be eligible to attend the workshops. <b>Participants will also receive priority acceptance to HackGT 12.</b> Each workshop will be hosted by a different CoC club, and there will be a mini-competition at the end of each session, with unique prizes for each workshop winner!
+
+					All Georgia Tech students are welcome to apply to participate in HackGTeeny! Applications will be open from <chakra.span fontWeight='bold' textDecoration='underline'>February 1 to February 26, 2025</chakra.span>. Only students who are admitted to the event will be eligible to attend the workshops. <b>Participants will also receive priority acceptance to HackGT 12*</b>. Each workshop will be hosted by a different CoC club, and there will be a mini-competition at the end of each session, with unique prizes for each workshop winner!
+					<br />
+					<br />
+					*this does not mean guaranteed access, participants will just have access to special early bird access to HackGT 12
 				</AdmissionsCard>
 
 				{/* [admissions section removed as of 2025 hi-fi, 21 jan 2025]
