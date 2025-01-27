@@ -1,4 +1,4 @@
-import { Box, Container, Flex } from '@chakra-ui/react';
+import { Box, Container, Flex, useColorMode } from '@chakra-ui/react';
 import NavBar from './components/NavBar';
 import PurpleDivider from './components/PurpleDivider';
 import HeroSection from './components/hero/HeroSection';
@@ -10,6 +10,13 @@ import FAQSection from './components/faq/FAQSection';
 import WorkshopsSection from './components/workshops/WorkshopsSection';
 
 function App() {
+
+  const { colorMode, toggleColorMode } = useColorMode();
+
+  if (colorMode === 'dark') {
+    toggleColorMode();
+  }
+
   return (
     <>
       <Container maxW='container.xl' py={4} px={10}>

@@ -25,7 +25,7 @@ const DesktopNavBar = () => {
       </NavLink>
 
       <Center>
-        <Img src={hackgteeny} alt='HackGT' h="153px" />
+        <Img src={hackgteeny} alt='HackGT' h="100px" />
       </Center>
 
       <NavLink href="#schedule">

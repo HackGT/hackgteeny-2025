@@ -32,7 +32,7 @@ const Footer = () => {
         {
           LINKS.map(({ icon, href }) => {
             return (
-              <Link href={href} isExternal>
+              <Link href={href} key={href} isExternal>
                 <Icon as={icon} boxSize={6} _hover={{ color: "#7B69EC" }} />
               </Link>
             );

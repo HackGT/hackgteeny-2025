@@ -30,6 +30,10 @@ const HeroSection = () => {
             as="a"
             href="https://registration.hexlabs.org/"
             target='_blank'
+            _hover={{
+              backgroundColor: "#94dfff",
+            }}
+            transition='all .2s'
           >
             Register
           </Text>
