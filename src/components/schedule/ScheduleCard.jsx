@@ -48,7 +48,6 @@ const ScheduleCard = ({ color, title, children }) => {
             </Text>
           </GridItem>
         </Grid>
-
       </>
     );
   } else {
