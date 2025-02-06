@@ -66,7 +66,7 @@ const SCHEDULE_ITEMS = [
 const ScheduleSection = () => {
 	return (
 		<GenericSection id="schedule" title="Schedule">
-			<Flex flexDir="column" gap={16}>
+			<Flex flexDir="column" gap={8}>
 
 				{
 					SCHEDULE_ITEMS.map((item, index) => {
