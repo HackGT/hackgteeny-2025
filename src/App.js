@@ -38,7 +38,7 @@ function App() {
           fontFamily={styleConstants.fonts.heading}
           padding="min(1.6vw, 0.75rem) min(4vw, 2rem)"
           bgColor={styleConstants.colorPrimary}
-          width="fit-content"
+          width={{base: "full", lg: "fit-content"}}
           color="white"
           fontSize={{ base: '16px', lg: '20px' }}
           fontWeight='bold'
