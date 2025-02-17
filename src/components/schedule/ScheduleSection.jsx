@@ -1,7 +1,8 @@
 import React from 'react';
 import GenericSection from '../GenericSection';
-import { Flex } from '@chakra-ui/react';
+import { Box, Flex, Text } from '@chakra-ui/react';
 import ScheduleCard from './ScheduleCard';
+import styleConstants from '../../styleConstants';
 
 /*
 9:30 AM to 10:30 AM: Checkin —> Outside Klaus 1443

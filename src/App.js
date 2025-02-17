@@ -1,4 +1,4 @@
-import { Box, Container, Flex, useColorMode } from '@chakra-ui/react';
+import { Box, Container, Flex, Text, useColorMode } from '@chakra-ui/react';
 import NavBar from './components/NavBar';
 import PurpleDivider from './components/PurpleDivider';
 import HeroSection from './components/hero/HeroSection';
@@ -8,6 +8,8 @@ import ScheduleSection from './components/schedule/ScheduleSection';
 import Footer from './components/Footer';
 import FAQSection from './components/faq/FAQSection';
 import WorkshopsSection from './components/workshops/WorkshopsSection';
+import styleConstants from './styleConstants';
+import { ArrowForwardIcon } from '@chakra-ui/icons';
 
 function App() {
 
@@ -21,7 +23,34 @@ function App() {
     <>
       <Container maxW='container.xl' py={4} px={10}>
         <NavBar />
-        <PurpleDivider mb={16} mt={5} />
+        <PurpleDivider mb={12} mt={5} />
+
+        <Flex 
+        flexDirection={{base: 'column', md: 'row'}}
+        gap={5}
+        justifyContent='space-between'
+        alignItems='center' 
+        mb={12} px={8} py={4}
+        border={`2px solid ${styleConstants.colorSecondary}`} 
+        borderRadius={styleConstants.borderRadius}>
+					<Text fontSize='2xl' textAlign='center'>HackGTeeny will take place on <b>Saturday, March 1st!</b></Text>
+          <Text
+          fontFamily={styleConstants.fonts.heading}
+          padding="min(1.6vw, 0.75rem) min(4vw, 2rem)"
+          bgColor={styleConstants.colorPrimary}
+          width="fit-content"
+          color="white"
+          fontSize={{ base: '16px', lg: '20px' }}
+          fontWeight='bold'
+          borderRadius={{ base: 1000, lg: styleConstants.borderRadius }}
+          as="a"
+          href="https://registration.hexlabs.org/"
+          target='_blank'
+          _hover={{filter: 'brightness(1.1)'}}
+          transition='all .2s'>
+            Register
+          </Text>
+        </Flex>
 
         { /* the only reason this isnt in the flex is cuz we need less space on the bottom */}
         <Box mb={16}>
