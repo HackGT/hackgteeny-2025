@@ -33,11 +33,11 @@ function App() {
         mb={12} px={8} py={4}
         border={`2px solid ${styleConstants.colorSecondary}`} 
         borderRadius={styleConstants.borderRadius}>
-					<Text fontSize='2xl' textAlign='center'>HackGTeeny will take place on <b>Saturday, March 1st!</b></Text>
+					<Text fontSize='2xl' textAlign='center'>HackGTeeny 2025 was held on <b>Saturday, March 1st!</b></Text>
           <Text
           fontFamily={styleConstants.fonts.heading}
           padding="min(1.6vw, 0.75rem) min(4vw, 2rem)"
-          bgColor={styleConstants.colorPrimary}
+          bgColor={styleConstants.colorSecondary}
           width={{base: "full", md: "fit-content"}}
 	  textAlign={{base: "center", md: "left"}}
 	  color="white"
@@ -45,11 +45,11 @@ function App() {
           fontWeight='bold'
           borderRadius={{ base: 1000, lg: styleConstants.borderRadius }}
           as="a"
-          href="https://registration.hexlabs.org/"
+          href="https://drive.google.com/drive/folders/1Xj4G0-HFLhUIAAOK5hsXWJGYfEW4wXTR"
           target='_blank'
           _hover={{filter: 'brightness(1.1)'}}
           transition='all .2s'>
-            Register
+            View Photos
           </Text>
         </Flex>
 
